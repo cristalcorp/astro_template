@@ -1,5 +1,35 @@
+@use '../breakpoints' as *;
+
 body {
   background: #222;
   color: white;
+
+  @include up(xs) {
+    background: blue;
+  }
+
+  @include up(sm) {
+    background: cyan;
+  }
+
+  @include up(md) {
+    background: orange;
+  }
+
+  @include up(lg) {
+    background: red;
+  }
+
+  @include up(xl) {
+    background: green;
+  }
+
+  @include up(xxl) {
+    background: white;
+  }
+
+  @include up(xxxl) {
+    background: pink;
+  }
 }
 
